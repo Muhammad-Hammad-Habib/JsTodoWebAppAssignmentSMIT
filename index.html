@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- database -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC95Of-ZxOya6OWTX0xNrhra-mqWbzWSUo",
+            authDomain: "todo-app-2febd.firebaseapp.com",
+            projectId: "todo-app-2febd",
+            storageBucket: "todo-app-2febd.appspot.com",
+            messagingSenderId: "43550066944",
+            appId: "1:43550066944:web:8cdb6ca72bdc2784fd0be5"
+        };
+
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+
+
+
+
+
+
+    <div class="mainContainer">
+
+        <div class="inputTodo">
+
+            <input type="text" name="Todo" id="todo" class="bi bi-arrow-return-right" placeholder="Add Todo items">
+
+            <img  onclick="adddTodo()" src="icon/adding.png" />
+            <img onclick="deleteAllBtn()" src="icon/deleteAll.png" />
+        </div>
+
+        <ol id="addTodo" class="addTodo">
+           <!-- child in creating here -->
+        </ol>
+    </div>
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

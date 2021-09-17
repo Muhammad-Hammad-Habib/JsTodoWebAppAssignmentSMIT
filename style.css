@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ol,ul{
+    list-style: none;
+}
+
+body{
+    background-image: url(bkg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainContainer{
+    width: 35%;
+    height: 78vh;
+    margin: auto;
+    margin-top: 4%;
+    padding: 50px 10px 1px 10px ;
+    background-color: #f5272707 ;
+    border-radius: 50px;
+    box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.56);
+}
+
+.inputTodo{
+    padding-bottom: 70px ;
+}
+
+.inputTodo input{
+    font-size: 25px;
+    padding : 5px;
+    width: 65%;
+    padding-left: 45px;
+    background-image: url(icon/addArrow.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    vertical-align: top;
+    border: none;
+    outline: none;
+    border-bottom: 8px solid black ;
+}
+
+.inputTodo img{
+    vertical-align: top;
+    width: 35px;
+    padding : 5px;
+}
+
+.inputTodo img:hover{
+    cursor: pointer ;
+}
+
+.addTodo {
+    display: inline-block;
+    width: 95%;
+    max-height: 50vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.addTodo  ul  {
+        display: inline-block;
+        width: 100%;
+}
+
+
+.addTodo  ul li {
+    float: left;
+    margin-left: 10px;
+}
+
+.addTodo  ul li:first-child {
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    height: 30px;
+    width: 70%;
+}
+
+.addTodo img{
+    vertical-align: top;
+    width: 30px;
+    padding : 5px;
+    cursor: pointer;
+}
+
+
+
+
+@media screen and (max-width: 1104px) {
+   .mainContainer{
+       width: 50%;
+   }
+  }
+
+@media screen and (max-width: 772px) {
+.mainContainer{
+    width: 70%;
+}
+}
+
+
+@media screen and (max-width: 567px) {
+    .mainContainer{
+        width: 85%;
+        padding: 50px 5px 1px 5px ;
+
+    }
+    }
+    
+
+    @media screen and (max-width: 451px) {
+        .mainContainer{
+            width: 90%;
+            padding: 50px 5px 1px 5px ;
+    
+       }
+}
+
+
+@media screen and (max-width: 390px) {
+    .addTodo  ul li:first-child {
+        font-size: 30px;
+        width: 50%;
+    }
+    
+}
+
+
+
+
